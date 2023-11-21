@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="navy">#2D2F5D</color>
+    <color name="blue">#0283FF</color>
+    <color name="text_fields">#C3DDE5</color>
+    <color name="nav">#37AFFF</color>
 </resources>
