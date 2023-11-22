@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample_bg"
+    tools:context=".RegisterConfirm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="@string/explore_ph"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="345dp"
+            android:layout_height="510dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/confirm"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/entered_full_name"
+                android:paddingStart="15dp"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/entered_username"
+                android:paddingStart="15dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/entered_email_address"
+                android:paddingStart="15dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/entered_password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:textSize="12sp">
+
+            </EditText>
+
+            <CheckBox
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/confirmation"
+                android:textSize="12sp"
+                app:buttonTint="@color/navy"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:onClick="toRegister"
+                    android:text="@string/cancel"
+                    android:textColor="@color/navy"
+                    android:textSize="12sp"
+                    app:strokeColor="@color/navy"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/navy"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:onClick="toLogin"
+                    android:text="@string/register1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp" />
+
+                <TextView
+                    style="android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:onClick="toLogin"
+                    android:text="@string/sign_in1"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
