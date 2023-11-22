@@ -11,9 +11,13 @@ class RegisterConfirm : AppCompatActivity(){
         setContentView(R.layout.register_confirm)
     }
 
+    fun toRegister(view: View) {
+        val i = Intent(this, Register::class.java)
+        startActivity(i)
+    }
+
     fun toLogin(view: View) {
         val i = Intent(this, Login::class.java)
         startActivity(i)
     }
-
 }
