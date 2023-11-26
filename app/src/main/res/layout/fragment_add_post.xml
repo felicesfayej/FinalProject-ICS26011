@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="30dp"
+                android:text="Add Post"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/fragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Location"
+                android:textColor="@color/navy"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/text_field"
+                android:fontFamily="@font/montserrat"
+                android:hint=""
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Caption"
+                android:textColor="@color/navy"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/caption"
+                android:fontFamily="@font/montserrat"
+                android:hint=""
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/navy"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Upload Image"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

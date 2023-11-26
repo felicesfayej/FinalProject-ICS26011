@@ -35,6 +35,37 @@
             android:exported="false">
         </activity>
 
+        <activity
+            android:name=".MainLayout"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Profile"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Posts"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Favorites"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".EditProfile"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".AddPost"
+            android:exported="false">
+        </activity>
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

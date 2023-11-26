@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/username"
+                android:textSize="25sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/fragment">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Full Name"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="Bio"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Edit Profile"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/navy"
+                    android:layout_gravity="center"
+                    android:id="@+id/editprofile"
+                    android:onClick="toEditProfile"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Sign Out"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/navy"
+                    android:layout_gravity="center"
+                    android:id="@+id/signout"
+                    android:onClick=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:elevation="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:text="2"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_gravity="center"
+                        android:text="Posts"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:elevation="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:text="2"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blue"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_gravity="center"
+                        android:text="Favorites"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="50dp">
+
+                <!-- Posts Button -->
+                <TextView
+                    android:id="@+id/postsButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/button_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:onClick="onPostsButtonClick"
+                    android:padding="10dp"
+                    android:text="Posts"
+                    android:textSize="17sp" />
+
+                <!-- Favorites Button -->
+                <TextView
+                    android:id="@+id/favoritesButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Favorites"
+                    android:textSize="17sp"
+                    android:background="@drawable/button_selector"
+                    android:onClick="onFavoritesButtonClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/profile_fragmentContainer"
+                android:name="com.example.finalproject.Posts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayout" />
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+</FrameLayout>

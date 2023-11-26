@@ -20,4 +20,7 @@
     <string name="entered_password">Entered Password</string>
     <string name="confirmation">I understand that the information I have provided will be used to create my account and to provide me with the services I have requested.</string>
     <string name="cancel">CANCEL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_or_add_a_new_picture"><u>Edit or Add a new picture</u></string>
 </resources>
